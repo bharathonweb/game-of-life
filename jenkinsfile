@@ -10,7 +10,8 @@ pipeline{
         stage ('practice'){
             steps {
                 git url : 'https://github.com/bharathonweb/game-of-life.git',
-                branch : 'master'
+                branch : 'master',
+                sh 'mvn package'
                 
             }
         }
