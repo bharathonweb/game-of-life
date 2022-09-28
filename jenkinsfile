@@ -8,6 +8,7 @@ pipeline{
 
         }
         stage ('practice'){
+            agents {label : 'OPENJDK-8-UBUNTU'}
             steps {
                 git url : 'https://github.com/bharathonweb/game-of-life.git',
                 branch : 'master',
